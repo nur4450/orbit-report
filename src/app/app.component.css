@@ -3,9 +3,10 @@
 }
 
 button {
+    font-style: italic;
     margin-left: 10px;
-    color: #fff;
-    background-color: #009b25;
+    color: rgb(32, 43, 27);
+    background-color: #ecea62;
     border-radius: 4px;
     padding: 2px 5px;
     font-size: 18px;

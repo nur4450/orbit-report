@@ -32,3 +32,6 @@ tr:nth-child(1n+2){
 tr:nth-child(2n+2){
     background-color: rgb(174, 194, 159);
 }
+h3{
+    color: rgb(233, 96, 47);
+}

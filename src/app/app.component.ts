@@ -41,6 +41,31 @@ export class AppComponent {
     }
     this.displayList = matchingSatellites;
  }
+
+ searchOrbitType(searchTerm: string): void {
+  let matchingSatellites: Satellite[] = [];
+  searchTerm = searchTerm.toLowerCase();
+  for(let i=0; i < this.sourceList.length; i++) {
+     let orbitType = this.sourceList[i].orbitType.toLowerCase();
+     if (orbitType.indexOf(searchTerm) >= 0) {
+        matchingSatellites.push(this.sourceList[i]);
+     }
+  }
+  this.displayList = matchingSatellites;
+}
+
+searchType(searchTerm: string): void {
+  let matchingSatellites: Satellite[] = [];
+  searchTerm = searchTerm.toLowerCase();
+  for(let i=0; i < this.sourceList.length; i++) {
+     let type = this.sourceList[i].type.toLowerCase();
+     if (type.indexOf(searchTerm) >= 0) {
+        matchingSatellites.push(this.sourceList[i]);
+     }
+  }
+  this.displayList = matchingSatellites;
+}
+
 }
 
 
